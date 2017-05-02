@@ -1,18 +1,277 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/backimg"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
     tools:context="stereo.com.infomanger.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:id="@+id/menu1"
+            android:background="@drawable/back_menu_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/scan11"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+
+                />
+            <TextView
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:textColor="@color/menttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="扫一扫"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menu2"
+            android:background="@drawable/back_menu_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/menu2"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+
+                />
+            <TextView
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:textColor="@color/menttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设备查询"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/menu3"
+            android:background="@drawable/back_menu_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/menu3"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+
+                />
+            <TextView
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:textColor="@color/menttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设备检修"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/menu4"
+            android:background="@drawable/back_menu_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/menu4"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+
+                />
+            <TextView
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:textColor="@color/menttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设备维护"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/menu5"
+            android:background="@drawable/back_menu_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/menu5"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+
+                />
+            <TextView
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:textColor="@color/menttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设备巡视"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/menu6"
+            android:background="@drawable/back_menu_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/menu6"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+
+                />
+            <TextView
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:textColor="@color/menttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="设备盘点"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/menu7"
+            android:background="@drawable/back_menu_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/menu7"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+
+                />
+            <TextView
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:textColor="@color/menttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="数据同步"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/menu8"
+            android:background="@drawable/back_menu_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/menu8"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+
+                />
+            <TextView
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:textColor="@color/menttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="软件设置"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/menu9"
+            android:background="@drawable/back_menu_selector"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/menu9"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+
+
+                />
+            <TextView
+                android:textAlignment="center"
+                android:textSize="28dp"
+                android:textColor="@color/menttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="版本信息"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
