@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backimg"
+    android:orientation="vertical"
+    tools:context="stereo.com.infomanger.QueryActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableLeft="@mipmap/query48"
+            android:padding="16dp"
+            android:layout_margin="8dp"
+            android:hint="设备名称、设备型号"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:lines="1"
+            android:maxLength="20"
+
+            />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/spacer"
+            android:layout_margin="8dp"
+            />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list"
+        style="@style/List"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
