@@ -53,6 +53,10 @@ public class MainActivity extends AppCompatActivity {
                     intent=new Intent(MainActivity.this,ScanActivity.class);
                     startActivity(intent);
                     break;
+                case R.id.menu2:
+                    intent=new Intent(MainActivity.this,QueryActivity.class);
+                    startActivity(intent);
+                    break;
             }
         }
     };

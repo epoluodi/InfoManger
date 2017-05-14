@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/list_messagedetail_selector"
+
+    >
+
+
+    <TextView
+        android:id="@+id/sbname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:text="设备名称："
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:id="@+id/sbid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sbname"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:text="设备编号："
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+
+    <TextView
+        android:id="@+id/sblx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sbid"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:text="设备类型："
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+
+</LinearLayout>

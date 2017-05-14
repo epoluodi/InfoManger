@@ -9,34 +9,45 @@
     tools:context="stereo.com.infomanger.QueryActivity">
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:drawableLeft="@mipmap/query48"
-            android:padding="16dp"
-            android:layout_margin="8dp"
-            android:hint="设备名称、设备型号"
-            android:textColor="@color/white"
-            android:textAlignment="center"
-            android:lines="1"
-            android:maxLength="20"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-            />
-        <Spinner
+        <EditText
+            android:id="@+id/edit_query"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:id="@+id/spacer"
-            android:layout_margin="8dp"
-            />
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@mipmap/query48"
+            android:hint="设备名称、设备型号"
+            android:lines="1"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:maxLength="20"
+            android:padding="16dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/sblb"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="选择设备分类"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+         />
 
     </LinearLayout>
+
     <ListView
         android:id="@+id/list"
         style="@style/List"
 
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 </LinearLayout>
